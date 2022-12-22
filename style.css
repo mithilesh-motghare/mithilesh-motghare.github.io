@@ -1,95 +1,316 @@
+@font-face {
+  font-family: RenosRough-Regular;
+  src: url("Assets/fonts/RenosRough-Regular.otf");
+}
+
+@font-face {
+  font-family: American Purpose;
+  src: url("Assets/fonts/American Purpose.otf");
+}
+
+.sign-in {
+  font-family: RenosRough-Regular;
+  padding-top: 25px;
+}
+
+.nav-link {
+  color: #999999;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.nav-text {
+  position: absolute;
+  top: 50%;
+  padding-left: 10px;
+  transform: translateY(-50%);
+}
+
+i {
+  padding-left: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .nav-text {
+    position: static;
+  }
+  i {
+    padding-left: 10px;
+  }
+  img.sign-up {
+    display: none;
+  }
+  h1.heading {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 30px;
+  }
+  div.products {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .nav-text {
+    position: static;
+  }
+  i {
+    padding-left: 10px;
+  }
+  img.sign-up {
+    display: none;
+  }
+  div.products {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.sign-up {
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  font-family: American Purpose;
+  font-size: 60px;
+  font-weight: bold;
+  padding-left: 175px;
+}
+
+.products {
+  padding-left: 175px;
+  padding-right: 175px;
+}
+
+.card {
+  box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+}
+
+.card-btn {
+  background-color: #e4002b;
+  color: white;
+  font-family: RenosRough-Regular;
+  float: right;
+}
+
+.footer-links {
+  font-family: RenosRough-Regular;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+hr.horizontal-line {
+  border-top: 2px solid #bdbdbd;
+}
+
+@font-face {
+  font-family: RenosRough-Regular;
+  src: url("Assets/fonts/RenosRough-Regular.otf");
+}
+
+@font-face {
+  font-family: American Purpose;
+  src: url("Assets/fonts/American Purpose.otf");
+}
+
+.sign-in {
+  font-family: RenosRough-Regular;
+  padding-top: 25px;
+}
+
+.nav-link {
+  color: #999999;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.nav-text {
+  position: absolute;
+  top: 50%;
+  padding-left: 10px;
+  transform: translateY(-50%);
+}
+
+i {
+  padding-left: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .nav-text {
+    position: static;
+  }
+  i {
+    padding-left: 10px;
+  }
+  img.sign-up {
+    display: none;
+  }
+  h1.heading {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 30px;
+  }
+  div.products {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .nav-text {
+    position: static;
+  }
+  i {
+    padding-left: 10px;
+  }
+  img.sign-up {
+    display: none;
+  }
+  div.products {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.sign-up {
+  padding-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  font-family: American Purpose;
+  font-size: 60px;
+  font-weight: bold;
+  padding-left: 175px;
+}
+
+.products {
+  padding-left: 175px;
+  padding-right: 175px;
+}
+
+.card {
+  box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+}
+
+.card-btn {
+  background-color: #e4002b;
+  color: white;
+  font-family: RenosRough-Regular;
+  float: right;
+}
+
+.footer-links {
+  font-family: RenosRough-Regular;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+hr.horizontal-line {
+  border-top: 2px solid #bdbdbd;
+}
+
 body {
-    font-size: 16px;
-    font-family: system-ui;
-    background:black;
+  font-size: 16px;
+  font-family: system-ui;
+  background:black;
 }
 
 .form{
-    width: 100%;
+  width: 100%;
 }
 h2 {
-    text-align: center;
-    color: #ef6e58;
+  text-align: center;
+  color: #ff0000;
 }
 form {
-    width: 300px;
-    padding: 15px 40px 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    margin: 4% auto;
+  width: 600px;
+  padding: 15px 40px 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 4% auto;
 }
 label {
-    display: block;
-    margin-bottom: 5px
+  display: block;
+  margin-bottom: 5px
 }
 label i {
-    color: #999;
-    font-size: 80%;
+  color: #999;
+  font-size: 80%;
 }
 input, select {
-    border: 1px solid #ccc;
-    padding: 10px;
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 2px;
-    background-color: #a9bae64a;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background-color: #a9bae64a;
 }
 .box {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 .form-inline {
-    border: 1px solid #ccc;
-    padding: 8px 10px 4px;
-    border-radius: 2px;
+  border: 1px solid #ccc;
+  padding: 8px 10px 4px;
+  border-radius: 2px;
 }
 .form-inline label, .form-inline input {
-    display: inline-block;
-    width: auto;
-    padding-right: 15px;
+  display: inline-block;
+  width: auto;
+  padding-right: 15px;
 }
 .error {
-    color: red;
-    font-size: 90%;
+  color: #ff0000;
+  font-size: 90%;
 }
 input[type=text]{
-        outline: none;
+      outline: none;
 }
 
 input[type="submit"] {
-    font-size: 110%;
-    font-weight: 100;
-    background: #ef6e58;
-    border-color: #ef6e58;
-    box-shadow: 0 3px 0 #bd432e;
-    color: #fff;
-    margin-top: 10px;
-    cursor: pointer;
+  font-size: 110%;
+  font-weight: 100;
+  background: #ff0000;
+  border-color: #ff0000;
+  box-shadow: 0 3px 0 #ff0000;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
 }
 input[type="submit"]:hover {
-    background: #bd432e;
-    border-color: #bd432e;
+  background: #de3939;
+  border-color: #de3939;
 }
 
 .input-1{
-    background-image: url(check.png);
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    border:1px solid #01cc40;
+  background-image: url(check.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border:1px solid #01cc40;
 }
 .input-2{
-    background-image: url(cancel.png);
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    border:1px solid red;
+  background-image: url(cancel.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border:1px solid #ff0000;
 }
 .input-3{
-    border:1px solid #01cc40!important;
+  border:1px solid #01cc40!important;
 }
 select{
-    outline: none!important;
+  outline: none!important;
 }
 .input-4{
-    border:1px solid red;
+  border:1px solid #ff0000;
 }
+

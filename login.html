@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Log-In Form</title>
-    <link rel="stylesheet" href="style.css">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>KFC Login</title>
+    <link rel="stylesheet" href="style.css" />
     <script>
         function printError(Id, Msg) {
             document.getElementById(Id).innerHTML = Msg;
@@ -55,29 +57,141 @@
             } 
         };
     </script>
-</head>
-<body>
-   
-<form name="Form" onsubmit="return validateLoginForm()" >
-    <h2>Log-In</h2>
-    <div class="box">
-        <label>Email Address</label>
-        <input type="text" name="email" id="email">
-        <div class="error" id="emailErr"></div>
-    </div>
-    <div class="box">
-        <label>Password</label>
-        <input type="password" name="password" minlength="8" id="password">
-        <div class="error" id="passErr"></div>
-    </div>
-    <div>
-        <p style="color:black;">Don't have an account? <a style=" color:#ef6e58; text-decoration: underline;;" href="index.html">Sign Up</a></p>
-    </div>
-    <div class="box">
-        <input type="submit" value="Log In">
-    </div>
-</form>
+    <!-- Favicons -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="Assets/images/favicon.png"
+    />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-</body>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="KFC.webp" alt="First slide">
+        </div>
+      </div>
+    </div>
+    
+    <form name="Form" onsubmit="return validateLoginForm()" >
+        <h2>Log-In</h2>
+        <div class="box">
+            <label>Email Address</label>
+            <input type="text" name="email" id="email">
+            <div class="error" id="emailErr"></div>
+        </div>
+        <div class="box">
+            <label>Password</label>
+            <input type="password" name="password" minlength="8" id="password">
+            <div class="error" id="passErr"></div>
+        </div>
+        <div>
+            <p style="color:black;">Don't have an account? <a style=" color:#ff0000; text-decoration: underline;;" href="index.html">Sign Up</a></p>
+        </div>
+        <div class="box">
+            <input type="submit" value="Log In">
+        </div>
+    </form>
+
+    <footer>
+      <div class="container card links-footer">
+        <div class="row">
+          <div class="col-8" style="padding-top: 10px">
+            <span class="footer-links">ABOUT KFC</span>
+            <span class="footer-links">GIFT CARD</span>
+            <span class="footer-links">FEEDBACK</span>
+            <span class="footer-links">CONTACT US</span>
+            <span class="footer-links">BRAND T & C</span>
+            <span class="footer-links">OFFERS T & C</span>
+            <span class="footer-links">SITE MAP</span>
+            <span class="footer-links">FIND A KFC</span>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-3">
+            <img
+              height="37px"
+              width="96px"
+              src="Assets/images/google.png"
+              style="padding-top: 10px"
+            />
+            <img
+              height="37px"
+              width="96px"
+              src="Assets/images/app.png"
+              style="padding-top: 10px"
+            />
+          </div>
+        </div>
+        <hr class="horizontal-line" />
+        <div class="row">
+          <div class="col-6">
+            <img
+              height="30px"
+              width="40px"
+              src="Assets/images/facebook.png"
+              style="padding-left: 10px"
+            />
+            <img
+              height="30px"
+              width="60px"
+              src="Assets/images/instagram.png"
+              style="padding-left: 30px"
+            />
+            <img
+              height="30px"
+              width="75px"
+              src="Assets/images/youtube.png"
+              style="padding-left: 30px"
+            />
+          </div>
+          <div class="col-6">
+            <small style="float: right"
+              >© Copyright 2021 KFC. All Rights Reserved.</small
+            >
+          </div>
+        </div>
+        <br />
+        <div class="text-center">
+          <small>
+            Food shown are for illustration purpose only. Actual product may
+            differ from the images shown in this website. Our menu prices are
+            now inclusive of GST.* The KFC name, logos, and related marks are
+            trademarks of KFC, Inc. All chicken products contain Monosodium
+            Glutamate. Not recommended for infants below 12 months.
+          </small>
+        </div>
+      </div>
+    </footer>
+    <br />
+
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
